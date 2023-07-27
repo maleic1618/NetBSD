@@ -388,6 +388,7 @@ struct ena_adapter {
 	/* RSS*/
 	uint8_t	rss_ind_tbl[ENA_RX_RSS_TABLE_SIZE];
 	bool rss_support;
+	int initialized;
 
 	uint8_t mac_addr[ETHER_ADDR_LEN];
 	/* mdio and phy*/
